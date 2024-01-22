@@ -20,7 +20,7 @@
       /* Show an error if cookies are disabled */
       function check_cookies() {
 	if (!navigator.cookieEnabled) {
-	      document.getElementById('body').innerHTML = 'This page uses cookies to prevent common cross-site attacks. Please enable cookies in your browser.';
+	      document.getElementById('body').innerHTML = '该页面使用Cookies以防止普遍的跨域攻击。清启用您浏览器的Cookies。';
 	}
       }
     --></SCRIPT>
@@ -30,12 +30,12 @@
     <div class="cups-header">
       <ul>
 	<li><a href="https://openprinting.github.io/cups/" target="_blank">OpenPrinting CUPS</a></li>
-	<li><a href="/">Home</a></li>
-	<li><a {SECTION=admin?class="active" :}href="/admin">Administration</a></li>
-	<li><a {SECTION=classes?class="active" :}href="/classes/">Classes</a></li>
-	<li><a {SECTION=help?class="active" :}href="/help/">Help</a></li>
-	<li><a {SECTION=jobs?class="active" :}href="/jobs/">Jobs</a></li>
-	<li><a {SECTION=printers?class="active" :}href="/printers/">Printers</a></li>
+	<li><a href="/">主页</a></li>
+	<li><a {SECTION=admin?class="active" :}href="/admin">管理</a></li>
+	<li><a {SECTION=classes?class="active" :}href="/classes/">类</a></li>
+	<li><a {SECTION=help?class="active" :}href="/help/">在线帮助</a></li>
+	<li><a {SECTION=jobs?class="active" :}href="/jobs/">任务</a></li>
+	<li><a {SECTION=printers?class="active" :}href="/printers/">打印机</a></li>
       </ul>
     </div>
     <div class="cups-body">

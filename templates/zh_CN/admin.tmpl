@@ -11,7 +11,7 @@
     <H2 CLASS="title">类</H2>
 
     <P>
-    <FORM ACTION="/admin/" METHOD="POST"><INPUT TYPE="HIDDEN" NAME="org.cups.sid" VALUE="{$org.cups.sid}"><INPUT TYPE="HIDDEN" NAME="OP" VALUE="add-class"><INPUT TYPE="SUBMIT" VALUE="Add Class"></FORM>
+    <FORM ACTION="/admin/" METHOD="POST"><INPUT TYPE="HIDDEN" NAME="org.cups.sid" VALUE="{$org.cups.sid}"><INPUT TYPE="HIDDEN" NAME="OP" VALUE="add-class"><INPUT TYPE="SUBMIT" VALUE="添加类"></FORM>
     <FORM ACTION="/classes/" METHOD="GET"><INPUT TYPE="SUBMIT" VALUE="管理类"></FORM>
     </P>
 
@@ -36,7 +36,7 @@
 
     {ADVANCEDSETTINGS?<P><B>Server Settings\:</B></P>
 
-    <P><A HREF="/admin/">高级设置 <SMALL>&#x25bc;</SMALL></A><BR>
+    <P><A HREF="/admin/">Advanced <SMALL>&#x25bc;</SMALL></A><BR>
     <INPUT TYPE="HIDDEN" NAME="OP" VALUE="config-server">
     <INPUT TYPE="HIDDEN" NAME="ADVANCEDSETTINGS" VALUE="YES">
     <INPUT TYPE="CHECKBOX" NAME="SHARE_PRINTERS" ID="SHARE_PRINTERS" {?share_printers}><LABEL FOR="SHARE_PRINTERS"> Share printers connected to this system</LABEL><BR>
@@ -58,19 +58,19 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max log file size\:
     <INPUT TYPE="TEXT" NAME="MAX_LOG_SIZE" VALUE="{?max_log_size}" SIZE="6"></P>
 
-    :<P><B>服务器设置:</B></P>
+    :<P><B>服务器设置：</B></P>
 
-    <P><A HREF="/admin/?ADVANCEDSETTINGS=YES">Advanced <SMALL>&#x25b6;</SMALL></A><BR>
+    <P><A HREF="/admin/?ADVANCEDSETTINGS=YES">高级设置 <SMALL>&#x25b6;</SMALL></A><BR>
     <INPUT TYPE="HIDDEN" NAME="OP" VALUE="config-server">
-    <INPUT TYPE="CHECKBOX" NAME="SHARE_PRINTERS" ID="SHARE_PRINTERS" {?share_printers}><LABEL FOR="SHARE_PRINTERS"> Share printers connected to this system</LABEL><BR>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="CHECKBOX" NAME="REMOTE_ANY" ID="REMOTE_ANY" {?remote_any}><LABEL FOR="REMOTE_ANY">  Allow printing from the Internet</LABEL><BR>
-    <INPUT TYPE="CHECKBOX" NAME="REMOTE_ADMIN" ID="REMOTE_ADMIN" {?remote_admin}><LABEL FOR="REMOTE_ADMIN">  Allow remote administration</LABEL><BR>
-    {have_gssapi?<INPUT TYPE="CHECKBOX" NAME="KERBEROS" ID="KERBEROS" {?kerberos}><LABEL FOR="KERBEROS">  Use Kerberos authentication (<A HREF="/help/kerberos.html?TOPIC=Getting+Started">FAQ</A>)</LABEL><BR>:}
-    <INPUT TYPE="CHECKBOX" NAME="USER_CANCEL_ANY" ID="USER_CANCEL_ANY" {?user_cancel_any}><LABEL FOR="USER_CANCEL_ANY">  Allow users to cancel any job (not just their own)</LABEL><BR>
-    <INPUT TYPE="CHECKBOX" NAME="DEBUG_LOGGING" ID="DEBUG_LOGGING" {?debug_logging}><LABEL FOR="DEBUG_LOGGING">  Save debugging information for troubleshooting</LABEL></P>
+    <INPUT TYPE="CHECKBOX" NAME="SHARE_PRINTERS" ID="SHARE_PRINTERS" {?share_printers}><LABEL FOR="SHARE_PRINTERS"> 共享连接到本系统的打印机</LABEL><BR>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="CHECKBOX" NAME="REMOTE_ANY" ID="REMOTE_ANY" {?remote_any}><LABEL FOR="REMOTE_ANY"> 允许来自互联网的打印请求</LABEL><BR>
+    <INPUT TYPE="CHECKBOX" NAME="REMOTE_ADMIN" ID="REMOTE_ADMIN" {?remote_admin}><LABEL FOR="REMOTE_ADMIN">  允许远程管理</LABEL><BR>
+    {have_gssapi?<INPUT TYPE="CHECKBOX" NAME="KERBEROS" ID="KERBEROS" {?kerberos}><LABEL FOR="KERBEROS">  使用 Kerberos 身份验证（<A HREF="/help/kerberos.html?TOPIC=Getting+Started">帮助</A>）</LABEL><BR>:}
+    <INPUT TYPE="CHECKBOX" NAME="USER_CANCEL_ANY" ID="USER_CANCEL_ANY" {?user_cancel_any}><LABEL FOR="USER_CANCEL_ANY">  允许用户取消任何任务 (不仅是用户自己的)</LABEL><BR>
+    <INPUT TYPE="CHECKBOX" NAME="DEBUG_LOGGING" ID="DEBUG_LOGGING" {?debug_logging}><LABEL FOR="DEBUG_LOGGING">  保存调试信息用以排除故障</LABEL></P>
 
     }
-    <P><INPUT TYPE="SUBMIT" NAME="CHANGESETTINGS" VALUE="Change Settings"></P>
+    <P><INPUT TYPE="SUBMIT" NAME="CHANGESETTINGS" VALUE="更改设置"></P>
 
     </FORM>}
   </div>
