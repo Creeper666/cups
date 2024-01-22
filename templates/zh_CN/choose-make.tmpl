@@ -1,4 +1,4 @@
-<H2 CLASS="title">{op=modify-printer?Modify {printer_name}:Add Printer}</H2>
+<H2 CLASS="title">{op=modify-printer?修改 {printer_name}:添加打印机}</H2>
 
 <FORM METHOD="POST" ACTION="/admin" ENCTYPE="multipart/form-data">
 <INPUT TYPE="HIDDEN" NAME="org.cups.sid" VALUE="{$org.cups.sid}">
@@ -11,28 +11,28 @@
 
 <TABLE>
 {op=modify-printer?:<TR>
-<TH CLASS="label">Name:</TH>
+<TH CLASS="label">名称：</TH>
 <TD><INPUT TYPE="HIDDEN" NAME="PRINTER_NAME" VALUE="{printer_name}">{printer_name}</TD>
 </TR>}
 <TR>
-<TH CLASS="label">Description:</TH>
+<TH CLASS="label">描述：</TH>
 <TD><INPUT TYPE="HIDDEN" NAME="PRINTER_INFO" VALUE="{printer_info}">{printer_info}</TD>
 </TR>
 <TR>
-<TH CLASS="label">Location:</TH>
+<TH CLASS="label">位置：</TH>
 <TD><INPUT TYPE="HIDDEN" NAME="PRINTER_LOCATION" VALUE="{printer_location}">{printer_location}</TD>
 </TR>
 <TR>
-<TH CLASS="label">Connection:</TH>
+<TH CLASS="label">连接：</TH>
 <TD><INPUT TYPE="HIDDEN" NAME="DEVICE_URI" VALUE="{device_uri}">{device_uri}</TD>
 </TR>
 <TR>
-<TH CLASS="label">Sharing:</TH>
+<TH CLASS="label">共享：</TH>
 <TD><INPUT TYPE="HIDDEN" NAME="PRINTER_IS_SHARED" VALUE="{?printer_is_shared}">
-{?printer_is_shared=?Do Not:{?printer_is_shared=0?Do Not:}} Share This Printer</TD>
+{?printer_is_shared=?不:{?printer_is_shared=0?不:}}共享此打印机</TD>
 </TR>
 <TR>
-<TH CLASS="label">Make:</TH>
+<TH CLASS="label">品牌：</TH>
 <TD>
 <SELECT NAME="PPD_MAKE" SIZE="10">
 {[ppd_make]<OPTION VALUE="{ppd_make}" {?current_make={ppd_make}?SELECTED:}>{ppd_make}}
@@ -41,14 +41,14 @@
 </TR>
 <TR>
 <TD></TD>
-<TD><INPUT TYPE="SUBMIT" VALUE="Continue"></TD>
+<TD><INPUT TYPE="SUBMIT" VALUE="继续"></TD>
 </TR>
 <TR>
 <TD></TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
-<TH CLASS="label">Or Provide a PPD File:</TH>
+<TH CLASS="label">或提供PPD文件：</TH>
 <TD><INPUT TYPE="HIDDEN" NAME="MAX_FILE_SIZE" VALUE="2097152"><INPUT
 TYPE="FILE" NAME="PPD_FILE"></TD>
 </TR>

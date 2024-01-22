@@ -20,7 +20,7 @@
       /* Show an error if cookies are disabled */
       function check_cookies() {
 	if (!navigator.cookieEnabled) {
-	      document.getElementById('body').innerHTML = '该页面使用Cookies以防止普遍的跨域攻击。清启用您浏览器的Cookies。';
+	      document.getElementById('body').innerHTML = '该页面使用Cookies以防止普遍的跨域攻击。请启用您浏览器的Cookies。';
 	}
       }
     --></SCRIPT>

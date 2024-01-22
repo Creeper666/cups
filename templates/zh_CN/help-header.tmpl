@@ -1,22 +1,22 @@
 <FORM ACTION="/help/{?HELPFILE}" METHOD="GET">
 {TOPIC?<INPUT TYPE="HIDDEN" NAME="TOPIC" VALUE="{TOPIC}">:}
 
-<P ALIGN="CENTER"><B>Search in
-{HELPTITLE?{HELPTITLE}:{TOPIC?{TOPIC}:All Documents}}:</B> <INPUT
+<P ALIGN="CENTER"><B>在
+{HELPTITLE?{HELPTITLE}:{TOPIC?{TOPIC}:所有文档}}中搜索：</B> <INPUT
 TYPE="SEARCH" NAME="QUERY" VALUE="{?QUERY}" SIZE="40" PLACEHOLDER=""
 AUTOSAVE="org.cups.help" RESULTS="20">
-<INPUT TYPE="SUBMIT" NAME="SEARCH" VALUE="Search">
-<INPUT TYPE="SUBMIT" NAME="CLEAR" VALUE="Clear"></P>
+<INPUT TYPE="SUBMIT" NAME="SEARCH" VALUE="搜索">
+<INPUT TYPE="SUBMIT" NAME="CLEAR" VALUE="清空"></P>
 
 </FORM>
 
 <!-- Bookmarks -->
-<DIV CLASS="sidebar"><TABLE CLASS="inset" SUMMARY="Contents">
+<DIV CLASS="sidebar"><TABLE CLASS="inset" SUMMARY="目录">
 <TR><TD>
 
-<H3 CLASS="title">Online Help Documents</H3>
+<H3 CLASS="title">在线帮助文档</H3>
 
-<P CLASS="l0"><A HREF="/help/{QUERY??QUERY={QUERY}:}">All Documents</A></P>
+<P CLASS="l0"><A HREF="/help/{QUERY??QUERY={QUERY}:}">所有文档</A></P>
 <HR>
 
 {[BMTEXT]<P CLASS="l{BMINDENT}"><A HREF="{BMLINK}">{BMTEXT}</A></P>
@@ -24,18 +24,18 @@ AUTOSAVE="org.cups.help" RESULTS="20">
 </TD></TR>
 </TABLE></DIV>
 
-{QUERY?<P>Search Results in {HELPFILE?{HELPTITLE}:{TOPIC?{TOPIC}:All Documents}}\:</P>
+{QUERY?<P>在{HELPFILE?{HELPTITLE}:{TOPIC?{TOPIC}:所有文档}}中搜索\:</P>
 {QTEXT?<UL>
 {[QTEXT]<LI><A HREF="{QLINK}">{QTEXT}</A>{QPTEXT? (in <I><A HREF="{QPLINK}">{QPTEXT}</A></I>):}</LI>}
 {QTEXT?</UL>:}
-:<P>No matches found.</P>}
+:<P>无相关结果。</P>}
 <HR NOSHADE>:}
-{HELPTITLE?<FORM ACTION="/help/{?HELPFILE}" METHOD="GET"><INPUT TYPE="HIDDEN" NAME="PRINTABLE" VALUE="YES"><INPUT TYPE="SUBMIT" VALUE="View Printable Version"></FORM>:
+{HELPTITLE?<FORM ACTION="/help/{?HELPFILE}" METHOD="GET"><INPUT TYPE="HIDDEN" NAME="PRINTABLE" VALUE="YES"><INPUT TYPE="SUBMIT" VALUE="查看可打印版本"></FORM>:
 
-<H1>Online Help</H1>
+<H1>在线帮助</H1>
 
-<P>This is the CUPS online help interface. Enter search words above or click on any of the documentation links to display online help information.</P>
+<P>这是CUPS在线帮助页面。要显示在线帮助信息，请在上方输入关键词搜索，或者点击文档中的任意链接。</P>
 
-<P>If you are new to CUPS, read the "<a href="/help/overview.html">Overview of CUPS</a>" page.</P>
+<P>如果您是CUPS新手，请参阅“<a href="/help/overview.html">CUPS概览</a>”页面。</P>
 
-<P>The <A HREF="https://openprinting.github.io/cups/">CUPS home page</A> also provides many resources including user discussion forums, answers to frequently-asked questions, and a form for submitting bug reports and feature requests.</P>}
+<P><A HREF="https://openprinting.github.io/cups/">CUPS主页</A>同样提供了丰富的资源，包括用户论坛、常见问题回答，以及用于提交bug和功能特性请求的表单。</P>}
