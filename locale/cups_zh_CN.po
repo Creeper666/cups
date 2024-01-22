@@ -3154,7 +3154,7 @@ msgid "Cassette"
 msgstr "纸盒"
 
 msgid "Change Settings"
-msgstr "更改选项"
+msgstr "更改设置"
 
 #, c-format
 msgid "Character set \"%s\" not supported."
