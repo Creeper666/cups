@@ -28,12 +28,12 @@
       </div>
       <div class="row">
 	<div class="thirds">
-	  <h2>对CUPS用户</h2>
+	  <h2>对于CUPS用户</h2>
 	  <p><a href="help/overview.html">CUPS概述</a></p>
 	  <p><a href="help/options.html">从命令行打印及选项</a></p>
 	</div>
 	<div class="thirds">
-	  <h2>对CUPS管理员</h2>
+	  <h2>对于CUPS管理员</h2>
 	  <p><a href="help/admin.html">添加打印机和类</a></p>
 	  <p><a href="help/policies.html">管理操作策略</a></p>
 	  <p><a href="help/network.html">使用网络打印机</a></p>
@@ -41,7 +41,7 @@
 	  <p><a href="help/man-cupsd.conf.html">cupsd.conf参考</a></p>
 	</div>
 	<div class="thirds">
-	  <h2>对CUPS开发者</h2>
+	  <h2>对于CUPS开发者</h2>
 	  <p><a href="help/cupspm.html">CUPS编程手册</a></p>
 	  <p><a href="help/api-filter.html">过滤器和后端编程</a></p>
 	</div>
