@@ -11,9 +11,9 @@
 <TD>{?job_originating_user_name=?匿名:{job_originating_user_name}}&nbsp;</TD>
 <TD>{job_k_octets}k&nbsp;</TD>
 <TD>{job_impressions_completed=0?未知:{?job_impressions_completed}}&nbsp;</TD>
-<TD>{job_state=3?pending since<BR>{?time_at_creation=?Unknown:{time_at_creation}}:{job_state=4?held since<BR>{?time_at_creation=?Unknown:{time_at_creation}}:
-{job_state=5?processing since<BR>{?time_at_processing=?Unknown:{time_at_processing}}:{job_state=6?stopped:
-{job_state=7?canceled at<BR>{?time_at_completed=?Unknown:{time_at_completed}}:{job_state=8?aborted:completed at<BR>{?time_at_completed=?Unknown:{time_at_completed}}}}}}}}&nbsp;{job_printer_state_message?<BR>
+<TD>{job_state=3?挂起自<BR>{?time_at_creation=?未知:{time_at_creation}}:{job_state=4?保留自<BR>{?time_at_creation=?未知:{time_at_creation}}:
+{job_state=5?处理自<BR>{?time_at_processing=?未知:{time_at_processing}}:{job_state=6?暂停:
+{job_state=7?取消于<BR>{?time_at_completed=?未知:{time_at_completed}}:{job_state=8?中止于:完成于<BR>{?time_at_completed=?未知:{time_at_completed}}}}}}}}&nbsp;{job_printer_state_message?<BR>
 <EM>"{job_printer_state_message}"</EM>:}</TD>
 <TD>
 {job_preserved>0?{job_state>5?
